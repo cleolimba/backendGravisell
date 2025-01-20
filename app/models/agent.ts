@@ -2,7 +2,7 @@ import { DateTime } from 'luxon'
 import { BaseModel, column } from '@adonisjs/lucid/orm'
 
 export default class Agent extends BaseModel {
-  @column({ isPrimary: true })
+  @column({ isPrimary:true })
   declare id: number
 
   @column()
@@ -28,4 +28,5 @@ export default class Agent extends BaseModel {
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   declare updatedAt: DateTime
+
 }

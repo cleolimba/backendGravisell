@@ -17,6 +17,6 @@ router.get('/', async () => {
   }
 })
 
-router.post('/connexion-admin', [ConnexionsController, 'Admin'])
+router.post('/connexion', [ConnexionsController, 'Admin'])
 
 router.post('/signup', [InscriptionsController, 'signUp'])
