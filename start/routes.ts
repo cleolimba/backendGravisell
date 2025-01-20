@@ -7,6 +7,8 @@
 |
 */
 
+import ConnexionsController from '#controllers/connexions_controller'
+import InscriptionsController from '#controllers/inscriptions_controller'
 import router from '@adonisjs/core/services/router'
 
 router.get('/', async () => {
